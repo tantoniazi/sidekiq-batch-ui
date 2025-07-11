@@ -6,8 +6,8 @@ Gem::Specification.new do |spec|
   spec.authors     = ["Tiago Guerra"]
   spec.email       = ["tiago.antoniazi@gmail.com"]
   spec.homepage    = "https://github.com/tantoniazi/sidekiq-batch-ui"
-  spec.summary     = "TODO: Summary of SidekiqBatchUi."
-  spec.description = "TODO: Description of SidekiqBatchUi."
+  spec.summary     = "Summary of SidekiqBatchUi."
+  spec.description = "Description of SidekiqBatchUi."
   spec.license     = "MIT"
 
   spec.metadata["homepage_uri"] = spec.homepage
