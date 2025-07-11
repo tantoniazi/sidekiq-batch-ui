@@ -1,0 +1,26 @@
+<h1>Batch <%= @bid %></h1>
+<p><strong>Descrição:</strong> <%= @meta['description'] %></p>
+<p><strong>Total:</strong> <%= @meta['total'] %></p>
+<p><strong>Pendentes:</strong> <%= @meta['pending'] %></p>
+<p><strong>Criado em:</strong> <%= Time.at(@meta['created_at'].to_i) %></p>
+
+<h2>Jobs</h2>
+<ul>
+  <% @jobs.each do |jid| %>
+    <li><%= jid %></li>
+  <% end %>
+</ul>
+
+<h2>Errors</h2>
+<ul>
+  <% @errors.each do |jid, error| %>
+    <li><strong><%= jid %></strong>: <%= error %></li>
+  <% end %>
+</ul>
+
+<h2>Callbacks</h2>
+<ul>
+  <% @callbacks.each do |cb| %>
+    <li><%= cb %></li>
+  <% end %>
+</ul>

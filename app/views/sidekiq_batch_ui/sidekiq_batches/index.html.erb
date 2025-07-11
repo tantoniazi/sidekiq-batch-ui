@@ -1,0 +1,23 @@
+<h1>Sidekiq Batches</h1>
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Descrição</th>
+      <th>Total</th>
+      <th>Pendentes</th>
+      <th>Criado em</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @batches.each do |batch| %>
+      <tr>
+        <td><%= link_to batch[:id], admin_sidekiq_batch_path(batch[:id]) %></td>
+        <td><%= batch[:description] %></td>
+        <td><%= batch[:total] %></td>
+        <td><%= batch[:pending] %></td>
+        <td><%= batch[:created_at] %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
